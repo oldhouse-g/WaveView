@@ -1,0 +1,15 @@
+{% if page.url == "/" %}
+<style>
+.site-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 0; text-align: center; margin-bottom: 40px; }
+.site-title { font-size: 48px; font-weight: bold; color: white; letter-spacing: 4px; }
+.site-description { text-align: center; font-size: 20px; color: rgba(255,255,255,0.9); margin-top: 15px; }
+.site-nav { background: white; padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.site-nav a { color: #667eea; font-weight: 500; padding: 0 15px; }
+body { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: #fafafa; }
+.post-list { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+.post-link { font-size: 22px; color: #333; font-weight: 600; }
+.site-footer { background: #2d3748; color: white; padding: 30px 0; margin-top: 60px; }
+</style>
+{% else %}
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+{% endif %}
